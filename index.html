@@ -3,128 +3,257 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farhana Jannat Mim| Research Portfolio</title>
+<title>Farhana Jannat Mim | Research Portfolio</title>
+
 <style>
-* {margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body {font-family:Arial,sans-serif;background:#f7faf7;color:#26372e;line-height:1.7}
-header {background:#123b2e;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-header h2 {letter-spacing:1px}
-nav a {color:white;text-decoration:none;margin:0 8px;font-size:14px}
-nav a:hover {color:#b5d9bd}
-.hero {background:#123b2e;color:white;text-align:center;padding:100px 8%}
-.hero h1 {font-size:48px;margin-bottom:15px}
-.hero p {color:#d5e6da;max-width:650px;margin:auto}
-.btn {display:inline-block;margin-top:25px;padding:12px 25px;background:#b5d9bd;color:#123b2e;text-decoration:none;border-radius:5px;font-weight:bold}
-section {padding:65px 10%}
-.section-title {color:#174b37;font-size:30px;margin-bottom:25px}
-.card {background:white;padding:25px;margin:15px 0;border-radius:10px;border:1px solid #e1eae3;box-shadow:0 3px 12px #00000008}
-.card h3 {color:#236344;margin-bottom:8px}
-.skills {display:flex;flex-wrap:wrap;gap:12px}
-.skills span {background:#e4f0e7;color:#20583b;padding:9px 15px;border-radius:20px}
-.alt {background:#edf3ee}
-footer {background:#123b2e;color:white;text-align:center;padding:25px}
-footer a {color:#b5d9bd}
-@media(max-width:600px) {
-.hero h1 {font-size:34px}
-header {justify-content:center}
-nav {text-align:center}
-nav a {display:inline-block;margin:5px}
-section {padding:45px 7%}
+:root {
+  --green: #174c3c;
+  --dark: #102f27;
+  --light: #f5f8f5;
+  --gold: #c39a55;
+  --text: #293b34;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.7;
+}
+nav {
+  background: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 15px #0000000c;
+}
+.logo { color: var(--green); font-weight: bold; font-size: 20px; }
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 13px;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  padding: 100px 10%;
+  background: linear-gradient(120deg, #123d30, #28634d);
+  color: white;
+}
+.hero small { color: #e4c58e; letter-spacing: 3px; }
+.hero h1 { font-size: clamp(38px, 6vw, 65px); margin: 15px 0; }
+.hero p { max-width: 650px; color: #e3eee8; }
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 11px 22px;
+  background: #d0aa69;
+  color: #17392d;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+section { padding: 75px 10%; }
+.section-title { color: var(--green); font-size: 30px; margin-bottom: 8px; }
+.line { width: 55px; height: 3px; background: var(--gold); margin: 12px 0 30px; }
+.about-grid, .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 22px #183b2b0b;
+  border: 1px solid #e7eee8;
+}
+.card h3 { color: var(--green); margin-bottom: 8px; }
+.tag {
+  display: inline-block;
+  background: #eaf2ec;
+  color: var(--green);
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 5px 4px 0 0;
+}
+.activity-image {
+  height: 165px;
+  background: linear-gradient(135deg, #dce9df, #b8d0c0);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #315c48;
+  margin-bottom: 17px;
+  font-size: 14px;
+}
+.muted { color: #718078; font-size: 13px; }
+#research, #activities, #contact { background: #edf3ee; }
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
+}
+@media(max-width:700px) {
+  nav { flex-direction: column; gap: 12px; }
+  nav a { margin: 0 5px; font-size: 11px; }
+  section { padding: 55px 7%; }
+  .hero { padding: 75px 7%; }
 }
 </style>
 </head>
+
 <body>
 
-<header>
-<h1>Farhana Jannat Mim</h1>
 <nav>
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#projects">Projects</a>
-<a href="#leadership">Leadership</a>
-<a href="#contact">Contact</a>
+  <div class="logo">FJM.</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
+
+<header class="hero">
+  <small>ACADEMIC & RESEARCH PORTFOLIO</small>
+  <h1>Farhana Jannat Mim</h1>
+  <p>
+    Undergraduate Student in Food and Nutrition Engineering.
+    Interested in food science, nutrition research, food safety
+    and public health.
+  </p>
+  <a class="btn" href="#about">Explore My Portfolio</a>
 </header>
 
-<div class="hero">
-<h1>Farhana Jannat Mim </h1>
-<p>Food and Nutrition Engineering Student | Research Enthusiast | Exploring Food, Nutrition and Public Health</p>
-<a href="#about" class="btn">Explore My Portfolio</a>
-</div>
-
 <section id="about">
-<h2 class="section-title">About Me</h2>
-<div class="card">
-<p>I am an undergraduate student of Food and Nutrition Engineering with a strong interest in scientific research, food safety, nutrition and public health. I am passionate about exploring research opportunities, developing new skills and contributing to meaningful scientific work.</p>
-</div>
+  <h2 class="section-title">About Me</h2>
+  <div class="line"></div>
+  <div class="about-grid">
+    <div>
+      <p>
+        I am an undergraduate student of Food and Nutrition Engineering
+        with a strong interest in academic research and scientific
+        exploration. I aim to contribute to food safety, nutrition
+        and public health through evidence-based research.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Academic Profile</h3>
+      <p><b>Field:</b> Food and Nutrition Engineering</p>
+      <p><b>Level:</b> Undergraduate</p>
+      <p><b>Organization:</b> DIU Research Society</p>
+      <p><b>Position:</b> General Secretary</p>
+    </div>
+  </div>
 </section>
 
-<section id="research" class="alt">
-<h2 class="section-title">Research Interests</h2>
-<div class="skills">
-<span>Food Processing</span>
-<span>Food Safety</span>
-<span>Public Health Nutrition</span>
-<span>Personalized Nutrition</span>
-<span>AI in Nutrition</span>
-<span>Food Security</span>
-<span>Climate Change & Nutrition</span>
-</div>
+<section id="research">
+  <h2 class="section-title">Research Interests</h2>
+  <div class="line"></div>
+  <div class="cards">
+    <div class="card"><h3>Food Safety</h3><p>Microbial contamination, food storage and foodborne pathogens.</p></div>
+    <div class="card"><h3>Food Processing</h3><p>Food preservation, processing technologies and product quality.</p></div>
+    <div class="card"><h3>Public Health Nutrition</h3><p>Dietary practices, nutrition security and community health.</p></div>
+    <div class="card"><h3>AI & Personalized Nutrition</h3><p>Technology-supported dietary recommendations and nutrition research.</p></div>
+    <div class="card"><h3>Climate & Food Security</h3><p>Climate vulnerability, adaptation and food security.</p></div>
+  </div>
 </section>
 
 <section id="projects">
-<h2 class="section-title">Research & Projects</h2>
-<div class="card">
-<h3>Food Safety Research</h3>
-<p>Research on microbial quality and household storage conditions of commonly consumed cooked foods in Bangladesh.</p>
-<p><b>Status:</b> Research project</p>
-</div>
-<div class="card">
-<h3>Food Security & Climate Change</h3>
-<p>Exploring food security, dietary practices and climate vulnerability among communities in Bangladesh.</p>
-<p><b>Status:</b> Research project</p>
-</div>
-<div class="card">
-<h3>Personalized Nutrition & AI</h3>
-<p>Exploring the role of artificial intelligence in personalized nutrition and dietary recommendations.</p>
-<p><b>Status:</b> Research interest</p>
-</div>
+  <h2 class="section-title">Research Projects</h2>
+  <div class="line"></div>
+  <div class="cards">
+    <div class="card">
+      <span class="tag">Research Project</span>
+      <h3>Food Safety in Household-Stored Cooked Foods</h3>
+      <p>Exploring microbial safety in commonly stored cooked foods under different household storage conditions.</p>
+      <p class="muted">Add project details and publication status here.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Research Project</span>
+      <h3>Food Security among Climate-Vulnerable Riverine Communities</h3>
+      <p>Exploring food security, dietary practices and disaster risk management capacity among riverine communities in Bangladesh.</p>
+      <p class="muted">Add project details and publication status here.</p>
+    </div>
+    <div class="card">
+      <span class="tag">Research Project</span>
+      <h3>Climate Change and Tea Workers' Food Security</h3>
+      <p>Exploring climate exposure, adaptive capacity and food security among tea workers in Sreemangal, Bangladesh.</p>
+      <p class="muted">Add project details and publication status here.</p>
+    </div>
+  </div>
 </section>
 
-<section id="leadership" class="alt">
-<h2 class="section-title">Leadership & Activities</h2>
-<div class="card">
-<h3>General Secretary</h3>
-<p>DIU Research Society (DIURS)</p>
-<p>Engaged in research community development, academic activities, student collaboration and research-oriented initiatives.</p>
-</div>
+<section id="activities">
+  <h2 class="section-title">Leadership & Activities</h2>
+  <div class="line"></div>
+  <div class="cards">
+    <div class="card">
+      <div class="activity-image">Add Event Photo</div>
+      <span class="tag">Leadership</span>
+      <h3>General Secretary – DIU Research Society</h3>
+      <p>Contributing to research activities, member engagement and academic initiatives.</p>
+    </div>
+    <div class="card">
+      <div class="activity-image">Add Event Photo</div>
+      <span class="tag">Research Session</span>
+      <h3>Research Fundamentals 101</h3>
+      <p class="muted">30 September 2026</p>
+      <p>Participated in organizing a research grooming session introducing members to the fundamentals of academic research.</p>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-<h2 class="section-title">Skills & Learning</h2>
-<div class="skills">
-<span>Research Writing</span>
-<span>Literature Review</span>
-<span>SPSS</span>
-<span>Public Speaking</span>
-<span>Academic Presentation</span>
-<span>Microsoft Office</span>
-</div>
+<section id="publications">
+  <h2 class="section-title">Publications</h2>
+  <div class="line"></div>
+  <div class="card">
+    <p>Research manuscripts and publications will be listed here as they become available.</p>
+  </div>
 </section>
 
-<section id="contact" class="alt">
-<h2 class="section-title">Contact Me</h2>
-<div class="card">
-<p>Interested in research collaboration or academic opportunities?</p>
-<p>Email: Your email address</p>
-<p>LinkedIn: Add your LinkedIn profile</p>
-<p>Google Scholar: Add your profile</p>
-</div>
+<section id="achievements">
+  <h2 class="section-title">Conferences & Achievements</h2>
+  <div class="line"></div>
+  <div class="card">
+    <p>Conference presentations, certificates, awards and academic achievements will be added here.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="line"></div>
+  <div class="cards">
+    <div class="activity-image">Add Your Photo</div>
+    <div class="activity-image">Add Conference Photo</div>
+    <div class="activity-image">Add Certificate</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="line"></div>
+  <div class="card">
+    <p>For academic collaboration, research discussions and opportunities:</p>
+    <p><b>Email:</b> Add your professional email</p>
+    <p><b>LinkedIn:</b> Add your LinkedIn profile link</p>
+    <p><b>GitHub:</b> farhana-jannat</p>
+  </div>
 </section>
 
 <footer>
-<p>© 2026 Farhana Jannat Mim | Academic & Research Portfolio</p>
-<p>Learning, Researching & Growing.</p>
+  © 2026 Farhana Jannat Mim | Academic & Research Portfolio
 </footer>
 
 </body>
