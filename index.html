@@ -3,309 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farhana Jannat Mim | Research Portfolio</title>
-
+<title>Farhana Jannat Mim | Academic Portfolio</title>
+<meta name="description" content="Academic and research portfolio of Farhana Jannat Mim, Food and Nutrition Engineering student at Daffodil International University.">
 <style>
 :root {
-  --green: #174c3c;
-  --dark: #102f27;
-  --light: #f5f8f5;
-  --gold: #c39a55;
-  --text: #293b34;
+  --green:#176b50;
+  --dark:#123d32;
+  --light:#f3f8f5;
+  --text:#263b35;
+  --muted:#687a73;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-<div style="text-align:center; margin:25px auto;">
- <img src="https://farhana-jannat.github.io/pformal%20pic.png" alt="Farhana Jannat Mim" style="width:180px; height:180px; object-fit:cover; border-radius:50%; border:4px solid #2e8b57;">
-       style="width:180px; height:180px; object-fit:cover; border-radius:50%; border:4px solid #2e8b57;">
-</div>body {
-  font-family: Arial, sans-serif;
-  background: var(--light);
-  color: var(--text);
-  line-height: 1.7;
-}
-nav {
-  background: white;
-  padding: 18px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 15px #0000000c;
-}
-.logo { color: var(--green); font-weight: bold; font-size: 20px; }
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  margin-left: 18px;
-  font-size: 13px;
-}
-nav a:hover { color: var(--gold); }
-.hero {
-  padding: 100px 10%;
-  background: linear-gradient(120deg, #123d30, #28634d);
-  color: white;
-}
-.hero small { color: #e4c58e; letter-spacing: 3px; }
-.hero h1 { font-size: clamp(38px, 6vw, 65px); margin: 15px 0; }
-.hero p { max-width: 650px; color: #e3eee8; }
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 11px 22px;
-  background: #d0aa69;
-  color: #17392d;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-section { padding: 75px 10%; }
-.section-title { color: var(--green); font-size: 30px; margin-bottom: 8px; }
-.line { width: 55px; height: 3px; background: var(--gold); margin: 12px 0 30px; }
-.about-grid, .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
-}
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 5px 22px #183b2b0b;
-  border: 1px solid #e7eee8;
-}
-.card h3 { color: var(--green); margin-bottom: 8px; }
-.tag {
-  display: inline-block;
-  background: #eaf2ec;
-  color: var(--green);
-  padding: 5px 11px;
-  border-radius: 20px;
-  font-size: 12px;
-  margin: 5px 4px 0 0;
-}
-.activity-image {
-  height: 165px;
-  background: linear-gradient(135deg, #dce9df, #b8d0c0);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #315c48;
-  margin-bottom: 17px;
-  font-size: 14px;
-}
-.muted { color: #718078; font-size: 13px; }
-#research, #activities, #contact { background: #edf3ee; }
-footer {
-  background: var(--dark);
-  color: white;
-  text-align: center;
-  padding: 25px;
-  font-size: 13px;
-}
-@media(max-width:700px) {
-  nav { flex-direction: column; gap: 12px; }
-  nav a { margin: 0 5px; font-size: 11px; }
-  section { padding: 55px 7%; }
-  .hero { padding: 75px 7%; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:var(--text);line-height:1.7;background:#fff}
+nav{position:sticky;top:0;background:#fff;z-index:10;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0000000c}
+.logo{font-weight:800;color:var(--green);font-size:20px}
+nav a{color:var(--text);text-decoration:none;margin-left:20px;font-size:13px;font-weight:600}
+nav a:hover{color:var(--green)}
+.hero{background:var(--light);padding:75px 9%;display:flex;align-items:center;gap:55px;min-height:440px}
+.hero img{width:210px;height:210px;object-fit:cover;border-radius:50%;border:6px solid white;box-shadow:0 8px 30px #123d3220}
+.hero h1{font-size:40px;color:var(--dark);line-height:1.2;margin:12px 0}
+.tag{color:var(--green);font-weight:700;letter-spacing:2px;font-size:12px;text-transform:uppercase}
+.hero p{max-width:650px;color:var(--muted);margin:12px 0}
+.btn{display:inline-block;background:var(--green);color:white;padding:10px 22px;border-radius:5px;text-decoration:none;margin-top:12px;font-size:14px}
+section{padding:65px 9%;scroll-margin-top:75px}
+section:nth-of-type(even){background:#fbfdfb}
+.heading{font-size:27px;color:var(--dark);margin-bottom:22px}
+.heading:after{content:"";display:block;width:48px;height:3px;background:var(--green);margin-top:8px}
+p{margin-bottom:12px}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:white;border:1px solid #e5eee8;border-radius:9px;padding:22px;box-shadow:0 4px 15px #123d3208}
+.card h3{color:var(--green);font-size:17px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted)}
+ul{padding-left:20px}
+li{margin:7px 0}
+.pill{display:inline-block;background:#e8f3ed;color:var(--green);padding:5px 11px;border-radius:20px;font-size:12px;margin:4px}
+.result{font-size:25px;color:var(--green);font-weight:800}
+footer{text-align:center;background:var(--dark);color:white;padding:30px 15px}
+footer p{color:#d3e2da;font-size:13px}
+@media(max-width:700px){
+ nav{align-items:flex-start;gap:10px;flex-direction:column}
+ nav div{display:flex;flex-wrap:wrap;gap:10px}
+ nav a{margin:0;font-size:12px}
+ .hero{flex-direction:column;text-align:center;padding:50px 7%;gap:25px}
+ .hero h1{font-size:31px}
+ section{padding:48px 7%}
 }
 </style>
 </head>
-
 <body>
 
 <nav>
-  <div class="logo">FJM.</div>
-  <div>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#activities">Activities</a>
-    <a href="#contact">Contact</a>
-  </div>
+ <div class="logo">FJM.</div>
+ <div>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#research">Research</a>
+  <a href="#projects">Projects</a>
+  <a href="#leadership">Leadership</a>
+  <a href="#contact">Contact</a>
+ </div>
 </nav>
 
 <header class="hero">
-  <small>ACADEMIC & RESEARCH PORTFOLIO</small>
+ <img src="pformal%20pic.png" alt="Farhana Jannat Mim">
+ <div>
+  <div class="tag">Food & Nutrition Engineering | Research Enthusiast</div>
   <h1>Farhana Jannat Mim</h1>
-  <p>
-    Undergraduate Student in Food and Nutrition Engineering.
-    Interested in food science, nutrition research, food safety
-    and public health.
-  </p>
-  <a class="btn" href="#about">Explore My Portfolio</a>
+  <p>Final-year Food and Nutrition Engineering student at Daffodil International University, interested in food safety, food processing, public health nutrition and interdisciplinary research.</p>
+  <a class="btn" href="#about">Explore My Profile</a>
+ </div>
 </header>
 
 <section id="about">
-  <h2 class="section-title">About Me</h2>
-  <div class="line"></div>
-  <div class="about-grid">
-    <div>
-      <p>
-        I am an undergraduate student of Food and Nutrition Engineering
-        with a strong interest in academic research and scientific
-        exploration. I aim to contribute to food safety, nutrition
-        and public health through evidence-based research.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Academic Profile</h3>
-      <p><b>Field:</b> Food and Nutrition Engineering</p>
-      <p><b>Level:</b> Undergraduate</p>
-      <p><b>Organization:</b> DIU Research Society</p>
-      <p><b>Position:</b> General Secretary</p>
-    </div>
-  </div>
+ <h2 class="heading">About Me</h2>
+ <p>I am a Food and Nutrition Engineering student at Daffodil International University with a strong interest in research, scientific communication and public health. My academic interests focus on understanding food-related challenges and exploring evidence-based solutions for healthier and safer communities.</p>
+ <p>I enjoy research activities, academic collaboration, public speaking and organizing student-led initiatives. I aspire to contribute to meaningful research connecting food, nutrition, health and technology.</p>
+ <div class="grid">
+  <div class="card"><h3>Academic Profile</h3><p>Final-Year Student<br>Food and Nutrition Engineering<br>Daffodil International University</p></div>
+  <div class="card"><h3>Current Role</h3><p>General Secretary<br>DIU Research Society (DIURS)</p></div>
+ </div>
 </section>
+
 <section id="education">
-  <h2 class="section-title">Education</h2>
-  <div class="line"></div>
-
-  <div class="cards">
-
-    <div class="card">
-      <span class="tag">Undergraduate</span>
-      <h3>B.Sc. (Honours) in Food and Nutrition Engineering</h3>
-      <p>Daffodil International University</p>
-      <p><b>CGPA:</b> 3.65 / 4.00</p>
-      <p><b>Status:</b> Final Year</p>
-      <p><b>Expected Graduation:</b> 2027</p>
-    </div>
-
-    <div class="card">
-      <span class="tag">Higher Secondary Certificate</span>
-      <h3>HSC</h3>
-      <p>Professor Shahjahan Ali School & College</p>
-      <p><b>GPA:</b> 5.00 / 5.00</p>
-    </div>
-
-    <div class="card">
-      <span class="tag">Secondary School Certificate</span>
-      <h3>SSC</h3>
-      <p>Professor Shahjahan Ali School & College</p>
-      <p><b>GPA:</b> 5.00 / 5.00</p>
-    </div>
-
+ <h2 class="heading">Education</h2>
+ <div class="grid">
+  <div class="card">
+   <h3>B.Sc. in Food and Nutrition Engineering</h3>
+   <p>Daffodil International University</p>
+   <p>Expected Graduation: 2027</p>
+   <div class="result">3.65 / 4.00</div>
+   <p>Current CGPA</p>
   </div>
+  <div class="card">
+   <h3>Higher Secondary Certificate (HSC)</h3>
+   <p>Professor Shahjahan Ali School & College</p>
+   <div class="result">5.00 / 5.00</div>
+   <p>GPA</p>
+  </div>
+  <div class="card">
+   <h3>Secondary School Certificate (SSC)</h3>
+   <p>Professor Shahjahan Ali School & College</p>
+   <div class="result">5.00 / 5.00</div>
+   <p>GPA</p>
+  </div>
+ </div>
 </section>
+
 <section id="research">
-  <h2 class="section-title">Research Interests</h2>
-  <div class="line"></div>
-  <div class="cards">
-    <div class="card"><h3>Food Safety</h3><p>Microbial contamination, food storage and foodborne pathogens.</p></div>
-    <div class="card"><h3>Food Processing</h3><p>Food preservation, processing technologies and product quality.</p></div>
-    <div class="card"><h3>Public Health Nutrition</h3><p>Dietary practices, nutrition security and community health.</p></div>
-    <div class="card"><h3>AI & Personalized Nutrition</h3><p>Technology-supported dietary recommendations and nutrition research.</p></div>
-    <div class="card"><h3>Climate & Food Security</h3><p>Climate vulnerability, adaptation and food security.</p></div>
-  </div>
-<div class="cards">
-  <div class="card">
-    <h3>Secondary School Certificate (SSC)</h3>
-    <h2>GPA 5.00 / 5.00</h2>
-    <p>Professor Shahjahan Ali School & College</p>
-  </div>
-
-  <div class="card">
-    <h3>Higher Secondary Certificate (HSC)</h3>
-    <h2>GPA 5.00 / 5.00</h2>
-    <p>Professor Shahjahan Ali School & College</p>
-  </div>
-
-  <div class="card">
-    <h3>B.Sc. in Food and Nutrition Engineering</h3>
-    <h2>CGPA 3.65 / 4.00</h2>
-    <p>Daffodil International University</p>
-    <p>Expected Graduation: 2027</p>
-  </div>
-</div></section>
+ <h2 class="heading">Research Interests</h2>
+ <p class="muted">My research interests include interdisciplinary areas connecting food systems, nutrition, public health and emerging technologies.</p>
+ <div>
+  <span class="pill">Food Safety & Microbiology</span>
+  <span class="pill">Food Processing</span>
+  <span class="pill">Public Health Nutrition</span>
+  <span class="pill">AI in Personalized Nutrition</span>
+  <span class="pill">Food Security</span>
+  <span class="pill">Climate Change & Nutrition</span>
+  <span class="pill">Dietary Behaviour</span>
+ </div>
+</section>
 
 <section id="projects">
-  <h2 class="section-title">Research Projects</h2>
-  <div class="line"></div>
-  <div class="cards">
-    <div class="card">
-      <span class="tag">Research Project</span>
-      <h3>Food Safety in Household-Stored Cooked Foods</h3>
-      <p>Exploring microbial safety in commonly stored cooked foods under different household storage conditions.</p>
-      <p class="muted">Add project details and publication status here.</p>
-    </div>
-    <div class="card">
-      <span class="tag">Research Project</span>
-      <h3>Food Security among Climate-Vulnerable Riverine Communities</h3>
-      <p>Exploring food security, dietary practices and disaster risk management capacity among riverine communities in Bangladesh.</p>
-      <p class="muted">Add project details and publication status here.</p>
-    </div>
-    <div class="card">
-      <span class="tag">Research Project</span>
-      <h3>Climate Change and Tea Workers' Food Security</h3>
-      <p>Exploring climate exposure, adaptive capacity and food security among tea workers in Sreemangal, Bangladesh.</p>
-      <p class="muted">Add project details and publication status here.</p>
-    </div>
+ <h2 class="heading">Research Projects</h2>
+ <div class="grid">
+  <div class="card">
+   <h3>Microbial Safety of Household-Stored Cooked Foods</h3>
+   <p>Exploring microbial risks in commonly consumed cooked foods under different household storage, refrigeration and reheating conditions.</p>
+   <span class="pill">Food Safety</span><span class="pill">Microbiology</span>
   </div>
-</section>
-
-<section id="activities">
-  <h2 class="section-title">Leadership & Activities</h2>
-  <div class="line"></div>
-  <div class="cards">
-    <div class="card">
-      <div class="activity-image">Add Event Photo</div>
-      <span class="tag">Leadership</span>
-      <h3>General Secretary – DIU Research Society</h3>
-      <p>Contributing to research activities, member engagement and academic initiatives.</p>
-    </div>
-    <div class="card">
-      <div class="activity-image">Add Event Photo</div>
-      <span class="tag">Research Session</span>
-      <h3>Research Fundamentals 101</h3>
-      <p class="muted">30 September 2026</p>
-      <p>Participated in organizing a research grooming session introducing members to the fundamentals of academic research.</p>
-    </div>
+  <div class="card">
+   <h3>Food Security among Climate-Vulnerable Riverine Communities</h3>
+   <p>Investigating food security, dietary practices and disaster risk management capacity among riverine communities in Bangladesh.</p>
+   <span class="pill">Food Security</span><span class="pill">Climate</span>
   </div>
+  <div class="card">
+   <h3>Climate Change and Tea Workers</h3>
+   <p>Exploring climate exposure, adaptive capacity and food security among tea workers in Sreemangal, Bangladesh.</p>
+   <span class="pill">Nutrition</span><span class="pill">Climate Adaptation</span>
+  </div>
+ </div>
 </section>
 
 <section id="publications">
-  <h2 class="section-title">Publications</h2>
-  <div class="line"></div>
-  <div class="card">
-    <p>Research manuscripts and publications will be listed here as they become available.</p>
-  </div>
+ <h2 class="heading">Publications & Research in Progress</h2>
+ <div class="card">
+  <h3>Research Manuscripts & Ongoing Work</h3>
+  <p>Currently engaged in research projects and manuscript development in food safety, food security, climate change and nutrition.</p>
+  <p class="muted">Publication details and DOI links will be added after publication or formal acceptance.</p>
+ </div>
+</section>
+
+<section id="leadership">
+ <h2 class="heading">Leadership & Activities</h2>
+ <div class="card">
+  <h3>General Secretary — DIU Research Society (DIURS)</h3>
+  <p>Daffodil International University</p>
+  <p>Contributing to research-focused student engagement, academic grooming sessions, research awareness activities and organizational coordination.</p>
+ </div>
 </section>
 
 <section id="achievements">
-  <h2 class="section-title">Conferences & Achievements</h2>
-  <div class="line"></div>
-  <div class="card">
-    <p>Conference presentations, certificates, awards and academic achievements will be added here.</p>
-  </div>
-</section>
-
-<section id="gallery">
-  <h2 class="section-title">Gallery</h2>
-  <div class="line"></div>
-  <div class="cards">
-    <div class="activity-image">Add Your Photo</div>
-    <div class="activity-image">Add Conference Photo</div>
-    <div class="activity-image">Add Certificate</div>
-  </div>
+ <h2 class="heading">Conferences & Achievements</h2>
+ <div class="card">
+  <h3>Academic & Research Engagement</h3>
+  <p>Participating in research presentations, academic events, student-led initiatives and research communication activities.</p>
+  <p class="muted">Specific conference names, awards and certificates can be added here.</p>
+ </div>
 </section>
 
 <section id="contact">
-  <h2 class="section-title">Contact</h2>
-  <div class="line"></div>
-  <div class="card">
-    <p>For academic collaboration, research discussions and opportunities:</p>
-    <p><b>Email:</b> Add your professional email</p>
-    <p><b>LinkedIn:</b> Add your LinkedIn profile link</p>
-    <p><b>GitHub:</b> farhana-jannat</p>
-  </div>
+ <h2 class="heading">Contact</h2>
+ <p>Interested in research collaboration, academic discussion and meaningful opportunities in food and nutrition research.</p>
+ <p><strong>University:</strong> Daffodil International University</p>
+ <p><strong>Department:</strong> Food and Nutrition Engineering</p>
+ <p><strong>GitHub:</strong> <a href="https://github.com/farhana-jannat" target="_blank">farhana-jannat</a></p>
+ <p><strong>Portfolio:</strong> <a href="https://farhana-jannat.github.io/" target="_blank">farhana-jannat.github.io</a></p>
 </section>
 
 <footer>
-  © 2026 Farhana Jannat Mim | Academic & Research Portfolio
+ <p>© 2026 Farhana Jannat Mim | Academic Portfolio</p>
+ <p>Research Today, A Better Tomorrow.</p>
 </footer>
 
 </body>
